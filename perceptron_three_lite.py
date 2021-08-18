@@ -13,7 +13,7 @@ out_neu = logist(summator)
 print(out_neu)
 inp = np.array([[1],[1],[1],[1]])
 tout = np.array([[0.81757],[0.76852],[0.57444],[0.57444]]).T
-for i in range(100):
+for i in range(1000):
  out = 1/(1+np.exp(-a*weight))
  weight += dot(inp.T,(tout-out)*out*(1-out))
 print(weight)
